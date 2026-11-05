@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings for text files
 * text=auto
+
+# --- Language stats: treat all .sql scripts as plain SQL ---
+*.sql linguist-language=SQL
+
+# --- Language stats: compiled output is not source code ---
+**/bin/** linguist-generated
+
+# --- Binary files ---
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.docx binary
+*.class binary
